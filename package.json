@@ -1,0 +1,15 @@
+{
+  "name": "customcanvas",
+  "version": "1.0.1",
+  "description": "Draing Canvas with Custom Brush size",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Samyak Bambole",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
