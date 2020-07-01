@@ -12,3 +12,4 @@
 ## Usage Instructions :- 
 * Use the slider to adjust the size of the chalk. 
 * Use buttons to change the color of the chalk. 
+* Hit 'c' on the keyboard to clear the blackboard. 
