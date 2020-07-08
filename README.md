@@ -13,3 +13,4 @@
 * Use the slider to adjust the size of the chalk. 
 * Use buttons to change the color of the chalk. 
 * Hit 'c' on the keyboard to clear the blackboard. 
+* If you want to save your work, just right click and then click "Save Image as .." The image will get downloaded in .png format. 
