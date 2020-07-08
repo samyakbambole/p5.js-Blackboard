@@ -11,10 +11,15 @@ let buttonPurple;
 let buttonWhite; 
 let buttonEraser; 
 
+// var boardW = windowWidth; 
+// var boardH = windowHeight - 10; 
+
 function setup() {
-	createCanvas(1070, 600); 
+	// createCanvas(1070, 600); 
+	createCanvas(windowWidth, windowHeight - 36); 
 	background(96, 96, 96);
-	slider = createSlider(1, 70, 30); 
+
+	slider = createSlider(1, 90, 30); 
 
 	buttonRed = createButton('Red');
 	buttonRed.mousePressed(brushRed); 
@@ -39,6 +44,12 @@ function mouseDragged() {
 	fill(colorR, colorG, colorB); 
 	noStroke(); 
 	ellipse(mouseX, mouseY, brushr * 2, brushr * 2);
+}
+
+function keyPressed() {
+	if (keyCode = 67) {
+		background(96, 96, 96); 
+	}
 }
 
 function brushRed() {
@@ -74,12 +85,6 @@ function brushPurple() {
 	colorR = 102; 
 	colorG = 0; 
 	colorB = 204; 
-}
-
-function keyPressed() {
-	if (key = 'c') {
-		background(96, 96, 96); 
-	}
 }
 
 function draw() {
