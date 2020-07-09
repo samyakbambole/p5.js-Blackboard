@@ -2,6 +2,10 @@
 
 ## [Open The Blackboard (v1.0.1)](https://samyakbambole.github.io/p5.js-Blackboard/public/index.html)
 
+## OR
+
+## [Download The Latest Version] (https://github.com/samyakbambole/p5.js-Blackboard/releases)
+
 ## Customization :- 
 * You can switch between colors by using the buttons 
 * You can also change the size of the Chalk by using the Slider 
