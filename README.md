@@ -25,7 +25,7 @@
 * node.js (for running server)
 * Terminal / Command Prompt / Git bash 
 
-## How to install - 
+### How to install - 
 * [Click this text](https://github.com/samyakbambole/p5.js-Blackboard/releases) and select the latest version. 
 
 ## How to run the Blackboard - 
