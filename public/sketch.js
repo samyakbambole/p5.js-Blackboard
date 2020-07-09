@@ -1,6 +1,8 @@
 var colorR = 79; 
 var colorG = 220; 
 var colorB = 236; 
+ 
+let laserPointerButton; 
 
 let slider; 
 
@@ -10,7 +12,8 @@ let buttonGreen;
 let buttonPurple;  
 let buttonWhite; 
 let buttonEraser; 
-let buttonChalk; 
+let buttonChalk;
+let clearBoard;  
 
 // var boardW = windowWidth; 
 // var boardH = windowHeight - 10; 
@@ -34,11 +37,14 @@ function setup() {
 	buttonBlue = createButton('Blue');
 	buttonBlue.mousePressed(brushBlue);
 
-	buttonWhite = createButton('Eraser');
-	buttonWhite.mousePressed(brushWhite);
-	
 	buttonChalk = createButton('White'); 
 	buttonChalk.mousePressed(chalk); 
+
+	buttonWhite = createButton('Eraser');
+	buttonWhite.mousePressed(brushWhite);
+
+	clearBoard = createButton('Clear'); 
+	clearBoard.mousePressed(ClearBoard); 
 }
 
 function mouseDragged() {
@@ -97,6 +103,10 @@ function chalk() {
 	colorG = 255; 
 	colorB = 255; 
 }
+
+function ClearBoard() {
+	background(96, 96, 96); 
+} 
 
 function draw() {
 
