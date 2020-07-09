@@ -10,6 +10,7 @@ let buttonGreen;
 let buttonPurple;  
 let buttonWhite; 
 let buttonEraser; 
+let buttonChalk; 
 
 // var boardW = windowWidth; 
 // var boardH = windowHeight - 10; 
@@ -35,6 +36,9 @@ function setup() {
 
 	buttonWhite = createButton('Eraser');
 	buttonWhite.mousePressed(brushWhite);
+	
+	buttonChalk = createButton('White'); 
+	buttonChalk.mousePressed(chalk); 
 }
 
 function mouseDragged() {
@@ -85,6 +89,13 @@ function brushPurple() {
 	colorR = 102; 
 	colorG = 0; 
 	colorB = 204; 
+}
+
+function chalk() {
+	// fill(255); 	
+	colorR = 255; 
+	colorG = 255; 
+	colorB = 255; 
 }
 
 function draw() {
