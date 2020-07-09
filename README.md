@@ -4,7 +4,7 @@
 
 ## OR
 
-## [Download The Latest Version] (https://github.com/samyakbambole/p5.js-Blackboard/releases)
+## [Download The Latest Version](https://github.com/samyakbambole/p5.js-Blackboard/releases)
 
 ## Customization :- 
 * You can switch between colors by using the buttons 
