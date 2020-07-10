@@ -109,8 +109,8 @@ function ClearBoard() {
 } 
 
 function draw() {
+	cursor(CROSS);
 	fill(colorR, colorG, colorB); 
 	noStroke(); 
 	ellipse(mouseX, mouseY, brushr * 2, brushr * 2);
-	cursor(CROSS);
 }
