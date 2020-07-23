@@ -14,6 +14,7 @@ let buttonWhite;
 let buttonEraser; 
 let buttonChalk;
 let clearBoard;  
+let improveCode; 
 
 // var boardW = windowWidth; 
 // var boardH = windowHeight - 10; 
@@ -45,6 +46,9 @@ function setup() {
 
 	clearBoard = createButton('Clear'); 
 	clearBoard.mousePressed(ClearBoard); 
+	
+	improveCode = createButton('Improve this app!'); 
+	improveCode.mousePressed(improveCodeFunction); 
 }
 
 function mouseDragged() {
@@ -110,4 +114,11 @@ function ClearBoard() {
 
 function draw() {
 	cursor(CROSS);
+}
+
+function improveCodeFunction() {
+	window.open(
+		'https://github.com/samyakbambole/p5.js-Blackboard.git', 
+		'_blank'
+		); 
 }
