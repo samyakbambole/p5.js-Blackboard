@@ -1,8 +1,8 @@
 # Blackboard in p5.js 
 
 ## Open The Blackboard in your Browser!
-### Option 1 - [Vercel](https://blackboard.vercel.app/)
-### Option 2 - [GitHub](https://samyakbambole.github.io/p5.js-Blackboard/public/index.html)
+### Deployment 1 - [Vercel](https://blackboard.vercel.app/) 
+### Deployment 2 - [GitHub](https://samyakbambole.github.io/p5.js-Blackboard/public/index.html)
 
 ## OR
 
