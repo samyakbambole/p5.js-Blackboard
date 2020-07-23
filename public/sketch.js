@@ -1,3 +1,7 @@
+// There are 2 deployments of this web app. 
+// 1. GitHub Pages - https://samyakbambole.github.io/p5.js-Blackboard/public/index.html
+// 2. Vercel - https://blackboard.vercel.app/
+
 var colorR = 79; 
 var colorG = 220; 
 var colorB = 236; 
