@@ -5,7 +5,7 @@
 var colorR = 79; 
 var colorG = 220; 
 var colorB = 236; 
- 
+
 let laserPointerButton; 
 
 let slider; 
