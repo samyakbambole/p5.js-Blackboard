@@ -34,7 +34,7 @@
 * Open Terminal / Command Prompt / Git bash
 * 'cd' to the directory where the server.js file is stored. 
 * Then type 'node server.js'
-* In your Browser, go to [localhost:3030 or click this text](http://localhost:3000). 
+* In your Browser, go to [localhost:3030 or click this text](http://localhost:3030). 
 
 ### Or if you dont want to run the server, follow these steps - 
 * Go to the 'public' folder in your File Explorer or Finder
