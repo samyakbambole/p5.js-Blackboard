@@ -1,22 +1,10 @@
 // There are 2 deployments of this web app. 
 // 1. GitHub Pages - https://samyakbambole.github.io/p5.js-Blackboard/public/index.html
 // 2. Vercel - https://blackboard.vercel.app/
-
-var colorR = 79; 
-var colorG = 220; 
-var colorB = 236; 
-
-let laserPointerButton; 
+let colorPicker; 
 
 let slider; 
 
-let buttonRed; 
-let buttonBlue; 
-let buttonGreen;
-let buttonPurple;  
-let buttonWhite; 
-let buttonEraser; 
-let buttonChalk;
 let clearBoard;  
 let improveCode; 
 
@@ -30,36 +18,21 @@ function setup() {
 
 	slider = createSlider(1, 90, 30); 
 
-	buttonRed = createButton('Red');
-	buttonRed.mousePressed(brushRed); 
-
-	buttonBlue = createButton('Green');
-	buttonBlue.mousePressed(brushGreen);
-
-	buttonBlue = createButton('Purple');
-	buttonBlue.mousePressed(brushPurple);
-
-	buttonBlue = createButton('Blue');
-	buttonBlue.mousePressed(brushBlue);
-
-	buttonChalk = createButton('White'); 
-	buttonChalk.mousePressed(chalk); 
-
-	buttonWhite = createButton('Eraser');
-	buttonWhite.mousePressed(brushWhite);
-
 	clearBoard = createButton('Clear'); 
 	clearBoard.mousePressed(ClearBoard); 
 	
 	improveCode = createButton('Improve this app!'); 
 	improveCode.mousePressed(improveCodeFunction); 
+
+	colorPicker = createColorPicker('#4fdcec'); 
+	colorPicker.position(300, height + 4);
 }
 
 function mouseDragged() {
 	var brushRadius = slider.value(); 
 	var brushr = brushRadius;
 	
-	fill(colorR, colorG, colorB); 
+	fill(colorPicker.color()); 
 	noStroke(); 
 	ellipse(mouseX, mouseY, brushr * 2, brushr * 2);
 }
@@ -68,48 +41,6 @@ function keyPressed() {
 	if (keyCode = 67) {
 		background(96, 96, 96); 
 	}
-}
-
-function brushRed() {
-	// fill(255, 0, 0); 
-	colorR = 255; 
-	colorG = 0; 
-	colorB = 0; 
-}
-
-function brushBlue() {
-	// fill(0, 0, 255); 
-	colorR = 79; 
-	colorG = 220; 
-	colorB = 236; 	
-}
-
-function brushWhite() {
-	// fill(255); 
-	colorR = 96; 
-	colorG = 96; 
-	colorB = 96; 
-}
-
-function brushGreen() {
-	// fill(255); 
-	colorR = 10; 
-	colorG = 252; 
-	colorB = 42; 
-}
-
-function brushPurple() {
-	// fill(255); 
-	colorR = 102; 
-	colorG = 0; 
-	colorB = 204; 
-}
-
-function chalk() {
-	// fill(255); 	
-	colorR = 255; 
-	colorG = 255; 
-	colorB = 255; 
 }
 
 function ClearBoard() {
