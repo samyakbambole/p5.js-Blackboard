@@ -40,3 +40,6 @@
 * And then open the 'index.html' file in your broser. 
 
 ## That's it! this is how you setup blackboard on your local computer!
+
+#### Made by Samyak Bambole
+#### Liscence - MIT
