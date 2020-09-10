@@ -16,7 +16,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight - 36); 
 	background(96, 96, 96);
 
-	slider = createSlider(1, 90, 30); 
+	slider = createSlider(1, 90, 20); 
 
 	clearBoard = createButton('Clear'); 
 	clearBoard.mousePressed(ClearBoard); 
