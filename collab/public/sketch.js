@@ -30,6 +30,7 @@ function setup() {
 	colorPicker.position(300, height + 4);
 
 	socket = io.connect('http://192.168.0.24:3030'); 
+	// socket = io.connect('https://blackboard-collab.herokuapp.com/'); 
 	socket.on('mouse', newDrawing); 
 }
 
