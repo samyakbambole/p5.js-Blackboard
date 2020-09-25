@@ -5,7 +5,7 @@ console.log('GitHub Pages Deployment - https://samyakbambole.github.io/p5.js-Bla
 
 const express = require('express'); 
 const app = express(); 
-const server = app.listen(3030, listening);
+const server = app.listen(80, listening);
 
 const chalk = require('chalk'); 
 const Datastore = require('nedb'); 
